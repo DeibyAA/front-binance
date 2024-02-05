@@ -11,6 +11,7 @@
 }
 
 $color-main: #0075FF;
+$color-footer:#f4f8fE;
 
 .btn-main {
     @include btn-base();
@@ -106,17 +107,15 @@ $color-main: #0075FF;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .icon2 {
+    i {
         color: $color-main;
         font-size: 10rem;
         padding: 0;
-        text-align: center;
     }
-    .title2 {
-        margin-top: -2rem;
+    .title {
+        margin-top: -1rem;
         font-size: 1.5rem;
         font-weight: 600;
-        text-align: center;
     }
 }
 
@@ -240,5 +239,41 @@ body {
             font-size: 0.9rem;
             color: #ffffffaa;
         }
+    }
+}
+
+.sec-onboarding {
+    .intro {
+        @extend .sec-features, .intro;
+    }
+    .steps {
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        max-width: 992px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        .step-separator {
+        flex: 1;
+        border-top: 2px solid #ddd;
+        margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer-cta {
+    background-color: $color-footer;
+    padding: 5rem;
+    background-image: url("../assets/img/bg.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    .footer-cta {
+        width: 50%;
+    .cta-title {
+        font-size: 2rem;
+    }
+    .cta-description {
+        font-size: 1.1rem;
+    }
     }
 }

@@ -69,16 +69,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .icon-desc .icon2 {
+  .icon-desc i {
     color: #0075FF;
     font-size: 10rem;
-    padding: 0;
-    text-align: center; }
-  .icon-desc .title2 {
-    margin-top: -2rem;
+    padding: 0; }
+  .icon-desc .title {
+    margin-top: -1rem;
     font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center; }
+    font-weight: 600; }
 
 body {
   padding: 0;
@@ -110,7 +108,7 @@ body {
       width: 20rem;
       font-size: 3rem; }
 
-.sec-features, .sec-benefits .intro {
+.sec-features, .sec-benefits .intro, .sec-onboarding .intro {
   width: 100%;
   max-width: 992px;
   margin: auto;
@@ -118,11 +116,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .sec-features .intro, .sec-benefits .intro .intro {
+  .sec-features .intro, .sec-benefits .intro .intro, .sec-onboarding .intro .intro {
     text-align: center; }
-    .sec-features .intro h3, .sec-benefits .intro .intro h3 {
+    .sec-features .intro h3, .sec-benefits .intro .intro h3, .sec-onboarding .intro .intro h3 {
       font-size: 1.8rem; }
-    .sec-features .intro p, .sec-benefits .intro .intro p {
+    .sec-features .intro p, .sec-benefits .intro .intro p, .sec-onboarding .intro .intro p {
       font-size: 0.8rem;
       color: #888; }
 
@@ -168,5 +166,30 @@ body {
     .sec-kpis .kpi .desc {
       font-size: 0.9rem;
       color: #ffffffaa; }
+
+.sec-onboarding .steps {
+  padding: 0 7rem 5rem 7rem;
+  display: flex;
+  max-width: 992px;
+  align-items: center;
+  justify-content: center;
+  margin: auto; }
+  .sec-onboarding .steps .step-separator {
+    flex: 1;
+    border-top: 2px solid #ddd;
+    margin: 0 1rem; }
+
+.sec-footer-cta {
+  background-color: #f4f8fE;
+  padding: 5rem;
+  background-image: url("../assets/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: 100%; }
+  .sec-footer-cta .footer-cta {
+    width: 50%; }
+    .sec-footer-cta .footer-cta .cta-title {
+      font-size: 2rem; }
+    .sec-footer-cta .footer-cta .cta-description {
+      font-size: 1.1rem; }
 
 /*# sourceMappingURL=styles.css.map */
